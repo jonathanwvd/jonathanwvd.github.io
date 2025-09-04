@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     html{scroll-behavior:smooth}
-    .hero-bg{background:linear-gradient(135deg, rgba(2,132,199,.6) 0%, rgba(37,99,235,.6) 100%)}
+    .hero-bg{background:linear-gradient(135deg, rgba(2,132,199,.4) 0%, rgba(12, 46, 119, 0.15) 100%)}
     .section-title{position:relative;display:inline-block}
     .section-title:after{content:'';position:absolute;width:50%;height:3px;bottom:-8px;left:25%;background:#2563eb}
     .skill-card{transition:transform .2s ease, box-shadow .2s ease}
@@ -40,18 +40,19 @@
   }
   </script>
 </head>
-<body class="font-sans bg-gray-50 text-gray-800">
+<body class="font-sans bg-white text-gray-800">
   <!-- Navigation -->
   <header class="fixed w-full bg-white/90 backdrop-blur shadow-sm z-50">
     <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
       <a href="#home" class="text-2xl font-bold text-blue-600">JD</a>
       <div class="hidden md:flex space-x-8">
         <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
-        <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
-        
-        <a href="#employment" class="text-gray-700 hover:text-blue-600 transition">Employment</a>
         <a href="#works" class="text-gray-700 hover:text-blue-600 transition">Works</a>
-        
+        <a href="#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+        <a href="#strengths" class="text-gray-700 hover:text-blue-600 transition">Strengths</a>
+        <a href="#employment" class="text-gray-700 hover:text-blue-600 transition">Employment</a>
+        <a href="#education" class="text-gray-700 hover:text-blue-600 transition">Education</a>
+        <a href="#awards" class="text-gray-700 hover:text-blue-600 transition">Awards</a>
       </div>
       <button class="md:hidden focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -64,10 +65,11 @@
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Home</a>
         <a href="#skills" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Skills</a>
-        
-        <a href="#employment" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Employment</a>
+        <a href="#strengths" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Strengths</a>
         <a href="#works" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Works</a>
-        
+        <a href="#employment" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Employment</a>
+        <a href="#education" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Education</a>
+        <a href="#awards" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600">Awards</a>
       </div>
     </div>
   </header>
@@ -80,7 +82,7 @@
           <h1 class="text-4xl md:text-5xl font-bold text-black mb-6">Hi, I'm <span class="text-white">Jonathan Dambros</span></h1>
           <h2 class="text-2xl md:text-3xl font-semibold text-white mb-2">AI & Machine Learning Specialist · Ph.D. in Chemical Engineering</h2>
           <p class="text-black/90 mb-6">Porto Alegre, Brazil</p>
-          <p class="text-black/95 text-lg mb-8 max-w-xl mx-auto md:mx-0">I build production-grade Python systems and agentic workflows, apply research in monitoring, diagnostics, and optimization, and lead teams to deliver dependable AI products and evaluations.</p>
+          <p class="text-black/95 text-lg mb-8 max-w-xl mx-auto md:mx-0">I build production-grade Python systems and agentic workflows, apply research in monitoring, diagnostics, and optimization of process industries, and lead teams to deliver dependable AI products and evaluations.</p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"><a href="mailto:jonathanwvd@gmail.com" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Email me</a></div>
         </div>
         <div class="md:w-1/2 flex justify-center fade-in">
@@ -96,6 +98,77 @@
       </div>
     </div>
   </section>
+
+  <!-- Works Section -->
+  <section id="works" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 section-title">Selected Work</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- awesome-industrial-datasets -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fab fa-github mr-3"></i><h3 class="text-xl font-semibold">awesome‑industrial‑datasets</h3></div>
+          <p class="text-gray-600 mb-4">Curated collection of real-world industrial datasets across multiple sectors. (200+ stars on GitHub)</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Open-source with JSON metadata and community contributions</li>
+            <li>Widely used by researchers and practitioners</li>
+          </ul>
+          <div class="mt-4"><a class="underline" href="https://github.com/jonathanwvd/awesome-industrial-datasets" target="_blank" rel="noopener">View repository</a></div>
+        </div>
+        <!-- PlantPilot -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-robot mr-3"></i><h3 class="text-xl font-semibold">PlantPilot</h3></div>
+          <p class="text-gray-600 mb-4">Conversational AI copilot for process plants using RAG over process documentation with Gradio UI.</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Rapid Q&A over comprehensive plant documentation</li>
+            <li>Prototype successfully used for demos and internal testing</li>
+          </ul>
+          <div class="mt-4"><a class="underline" href="https://huggingface.co/spaces/jonathanwvd/PlantPilot" target="_blank" rel="noopener">Open Space</a></div>
+        </div>
+        <!-- Research & Publications -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-graduation-cap mr-3"></i><h3 class="text-xl font-semibold">Research & Publications</h3></div>
+          <p class="text-gray-600 mb-4">Control-loop performance monitoring, diagnostics, and industrial applications with real-world impact.</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Peer-reviewed papers and conference presentations</li>
+            <li>Focus on control-loop process monitoring, fault detection, and optimization</li>
+          </ul>
+          <div class="mt-4"><a class="underline" href="https://scholar.google.com/citations?user=A2428LgAAAAJ&hl=en" target="_blank" rel="noopener">View on Google Scholar</a></div>
+        </div>
+        <!-- DigitalTwin (private) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-layer-group mr-3"></i><h3 class="text-xl font-semibold">DigitalTwin (private)</h3></div>
+          <p class="text-gray-600 mb-4">Python library for plant monitoring (CPM, Kalman) with reproducible workflows and data auditability.</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Successfully used in Petrobras collaborations</li>
+            <li>Flow-based execution with comprehensive data auditability</li>
+          </ul>
+          <div class="mt-4 text-gray-600">Private — details on request</div>
+        </div>
+        <!-- Kalman Filter (private) -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-project-diagram mr-3"></i><h3 class="text-xl font-semibold">Kalman Filter (private)</h3></div>
+          <p class="text-gray-600 mb-4">FilterPy-style package for advanced state estimation and filtering.</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Multiple Kalman filter variants implemented</li>
+            <li>Plant simulation using multiple Python libraries</li>
+          </ul>
+          <div class="mt-4 text-gray-600">Private — details on request</div>
+        </div>
+        <!-- Turing -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-clipboard-check mr-3"></i><h3 class="text-xl font-semibold">Turing (LLM Evaluation)</h3></div>
+          <p class="text-gray-600 mb-4">Evaluation frameworks and datasets to stress-test model reliability and performance.</p>
+          <ul class="list-disc ml-6 text-gray-700 space-y-1">
+            <li>Lead team of 30+ reviewers</li>
+            <li>Structured grading, rubric design, and calibration processes</li>
+          </ul>
+          <div class="mt-4"><a class="underline" href="https://www.linkedin.com/in/jwvd/" target="_blank" rel="noopener">Private — details on request</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- Skills Section -->
   <section id="skills" class="py-20 bg-white">
@@ -129,7 +202,7 @@
         <!-- Manager -->
         <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
           <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-users-cog mr-3"></i><h3 class="text-xl font-semibold">Manager</h3></div>
-          <p class="text-gray-600 mb-4">Leading teams and programs focused on reliable AI delivery, evaluation frameworks, and quality assurance.</p>
+          <p class="text-gray-600 mb-4">Leading teams focused on reliable AI delivery, evaluation frameworks, and quality assurance.</p>
           <ul class="list-disc ml-6 text-gray-700 space-y-1">
             <li>Team Leadership & Mentoring · 2+ yrs</li>
             <li>Stakeholder Communication · 2+ yrs</li>
@@ -141,7 +214,7 @@
 
   
 
-   <!-- Employment Section -->
+   <!-- Strengths Section -->
    <section id="strengths" class="py-20 bg-white">
     <div class="container mx-auto px-6">
       <h2 class="text-3xl font-bold text-center mb-12 section-title">Strengths & Setup</h2>
@@ -151,7 +224,7 @@
           <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-bolt mr-3"></i><h3 class="text-xl font-semibold">Work Ethic & Craft</h3></div>
           <p class="text-gray-600 mb-4">How I approach work and quality.</p>
           <ul class="list-disc ml-6 text-gray-700 space-y-1">
-            <li>Hard‑worker</li>
+            <li>Hard worker</li>
             <li>Communicative and open to feedback</li>
             <li>Attention to detail</li>
             <li>Creative problem‑solver</li>
@@ -163,7 +236,7 @@
           <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-desktop mr-3"></i><h3 class="text-xl font-semibold">Focused Remote Setup</h3></div>
           <p class="text-gray-600 mb-4">Quiet, dedicated workstation for deep work.</p>
           <ul class="list-disc ml-6 text-gray-700 space-y-1">
-            <li>Mac mini Pro • 48GB RAM</li>
+            <li>Mac mini M4 Pro • 48GB RAM</li>
             <li>~600 Mbps fiber internet</li>
             <li>Isolated workspace</li>
             <li>Dual monitors</li>
@@ -171,17 +244,19 @@
         </div>
         <!-- Lifestyle -->
         <div class="bg-gray-50 p-6 rounded-xl shadow-md skill-card">
-          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-music mr-3"></i><h3 class="text-xl font-semibold">Sports & Music</h3></div>
-          <p class="text-gray-600 mb-4">I enjoy sports and great music.</p>
+          <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-music mr-3"></i><h3 class="text-xl font-semibold">Hobbies</h3></div>
+          <p class="text-gray-600 mb-4">I enjoy sports, great music, and technology.</p>
           <ul class="list-disc ml-6 text-gray-700 space-y-1">
             <li>CrossFit practitioner</li>
             <li>Guitar player</li>
-            <li>Jazz and rock listener</li>
+            <li>Technology enthusiast</li>
+            <li>Open-source projects</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+
 
 
   <!-- Employment Section -->
@@ -243,76 +318,115 @@
   </section>
 
   
-  <!-- Works Section -->
-  <section id="works" class="py-20 bg-gray-50">
+<!-- Education Section -->
+<section id="education" class="py-20 bg-white">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-12 section-title">Selected Work</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- awesome-industrial-datasets -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fab fa-github mr-3"></i><h3 class="text-xl font-semibold">awesome‑industrial‑datasets</h3></div>
-        <p class="text-gray-600 mb-4">Curated collection of real-world industrial datasets across multiple sectors. (200+ stars on GitHub)</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Open-source with JSON metadata and community contributions</li>
-          <li>Widely used by researchers and practitioners</li>
-        </ul>
-        <div class="mt-4"><a class="underline" href="https://github.com/jonathanwvd/awesome-industrial-datasets" target="_blank" rel="noopener">View repository</a></div>
+    <h2 class="text-3xl font-bold text-center mb-12 section-title">Education</h2>
+
+    <div class="space-y-8 max-w-3xl mx-auto">
+      <!-- Postdoc -->
+      <div class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg shadow-sm">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <h3 class="text-xl font-semibold">Postdoctoral Researcher — Chemical Engineering</h3>
+            <h4 class="text-gray-600">UFRGS — GIMSCOP</h4>
+            <p class="text-gray-500 text-sm">Porto Alegre, RS, Brazil</p>
+          </div>
+          <span class="text-gray-500 mt-2 md:mt-0">Jun 2019 – present</span>
+        </div>
+        <p class="text-gray-600 mt-3">
+          Focus on real AI applications in process industries, collaborating closely with an oil & gas company.
+        </p>
       </div>
-      <!-- PlantPilot -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-robot mr-3"></i><h3 class="text-xl font-semibold">PlantPilot</h3></div>
-        <p class="text-gray-600 mb-4">Conversational AI copilot for process plants using RAG over process documentation with Gradio UI.</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Rapid Q&A over comprehensive plant documentation</li>
-          <li>Prototype successfully used for demos and internal testing</li>
-        </ul>
-        <div class="mt-4"><a class="underline" href="https://huggingface.co/spaces/jonathanwvd/PlantPilot" target="_blank" rel="noopener">Open Space</a></div>
+
+      <!-- Ph.D. -->
+      <div class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg shadow-sm">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <h3 class="text-xl font-semibold">Ph.D. — Chemical Engineering</h3>
+            <h4 class="text-gray-600">UFRGS</h4>
+            <p class="text-gray-500 text-sm">Porto Alegre, Brazil</p>
+          </div>
+          <span class="text-gray-500 mt-2 md:mt-0">Oct 2016 – Jun 2019</span>
+        </div>
       </div>
-      <!-- Research & Publications -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-graduation-cap mr-3"></i><h3 class="text-xl font-semibold">Research & Publications</h3></div>
-        <p class="text-gray-600 mb-4">Control-loop performance monitoring, diagnostics, and industrial applications with real-world impact.</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Peer-reviewed papers and conference presentations</li>
-          <li>Focus on control-loop process monitoring, fault detection, and optimization</li>
-        </ul>
-        <div class="mt-4"><a class="underline" href="https://scholar.google.com/citations?user=A2428LgAAAAJ&hl=en" target="_blank" rel="noopener">View on Google Scholar</a></div>
+
+      <!-- Visiting Researcher -->
+      <div class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg shadow-sm">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <h3 class="text-xl font-semibold">Visiting Researcher</h3>
+            <h4 class="text-gray-600">University of Kaiserslautern</h4>
+            <p class="text-gray-500 text-sm">Kaiserslautern, Germany</p>
+          </div>
+          <span class="text-gray-500 mt-2 md:mt-0">Apr 2018 – Oct 2018</span>
+        </div>
       </div>
-      <!-- DigitalTwin (private) -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-layer-group mr-3"></i><h3 class="text-xl font-semibold">DigitalTwin (private)</h3></div>
-        <p class="text-gray-600 mb-4">Python library for plant monitoring (CPM, Kalman) with reproducible workflows and data auditability.</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Successfully used in Petrobras collaborations</li>
-          <li>Flow-based execution with comprehensive data auditability</li>
-        </ul>
-        <div class="mt-4 text-gray-600">Private — details on request</div>
+
+      <!-- Master's -->
+      <div class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg shadow-sm">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <h3 class="text-xl font-semibold">M.Sc. — Chemical Engineering</h3>
+            <h4 class="text-gray-600">UFRGS</h4>
+            <p class="text-gray-500 text-sm">Rio Grande, Brazil</p>
+          </div>
+          <span class="text-gray-500 mt-2 md:mt-0">Mar 2015 – Oct 2016</span>
+        </div>
       </div>
-      <!-- Kalman Filter (private) -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-project-diagram mr-3"></i><h3 class="text-xl font-semibold">Kalman Filter (private)</h3></div>
-        <p class="text-gray-600 mb-4">FilterPy-style package for advanced state estimation and filtering.</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Multiple Kalman filter variants implemented</li>
-          <li>Plant simulation using multiple Python libraries</li>
-        </ul>
-        <div class="mt-4 text-gray-600">Private — details on request</div>
-      </div>
-      <!-- Turing -->
-      <div class="bg-white p-6 rounded-xl shadow-md skill-card">
-        <div class="text-blue-600 text-3xl mb-3 flex items-center"><i class="fas fa-clipboard-check mr-3"></i><h3 class="text-xl font-semibold">Turing (LLM Evaluation)</h3></div>
-        <p class="text-gray-600 mb-4">Evaluation frameworks and datasets to stress-test model reliability and performance.</p>
-        <ul class="list-disc ml-6 text-gray-700 space-y-1">
-          <li>Lead team of 30+ reviewers</li>
-          <li>Structured grading, rubric design, and calibration processes</li>
-        </ul>
-        <div class="mt-4"><a class="underline" href="https://www.linkedin.com/in/jwvd/" target="_blank" rel="noopener">Learn more</a></div>
+
+      <!-- Bachelor's -->
+      <div class="p-6 border-l-4 border-blue-600 bg-gray-50 rounded-r-lg shadow-sm">
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+          <div>
+            <h3 class="text-xl font-semibold">B.Sc. — Chemical Engineering</h3>
+            <h4 class="text-gray-600">FURG</h4>
+            <p class="text-gray-500 text-sm">Porto Alegre, Brazil</p>
+          </div>
+          <span class="text-gray-500 mt-2 md:mt-0">Mar 2010 – Dec 2014</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-  
+<!-- Awards Section -->
+<section id="awards" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12 section-title">Awards & Honors</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+        <div class="text-blue-600 text-3xl mb-3 flex items-center">
+          <i class="fas fa-trophy mr-3"></i><h3 class="text-xl font-semibold">Top Graduate (2014)</h3>
+        </div>
+        <p class="text-gray-600">
+          Recognized for the highest performance among Chemical Engineering graduates.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+        <div class="text-blue-600 text-3xl mb-3 flex items-center">
+          <i class="fas fa-medal mr-3"></i><h3 class="text-xl font-semibold">International Challenge Winner (2019)</h3>
+        </div>
+        <p class="text-gray-600">
+          Winner of the Gerdau-sponsored challenge proposing a computer-vision solution for scrap quality inspection.
+          <a class="underline" href="https://www.herox.com/digitalscrap/update/2582" target="_blank" rel="noopener">Details</a>
+        </p>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+        <div class="text-blue-600 text-3xl mb-3 flex items-center">
+          <i class="fas fa-award mr-3"></i><h3 class="text-xl font-semibold">Best Industry 4.0 Application (2021</h3>
+        </div>
+        <p class="text-gray-600">
+          National prize for the Best Industry 4.0 application in manufacturing.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-8">
